@@ -1,5 +1,5 @@
 function stringRotation(s1, s2){
-    return (s2+s2).includes(s1)
+    
 }
 
 

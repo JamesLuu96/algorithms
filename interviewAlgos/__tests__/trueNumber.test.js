@@ -7,8 +7,11 @@ const testCases = [
     ["2020", true],
     ["11", false],
     ["521001000", true],
+    ["5210010000", false]
     ["42101000", true],
-    ["1210", true]
+    ["1210", true],
+    ["10", false],
+    ["6210001000", true]
 ]
 
 testCases.forEach((x, i)=>{

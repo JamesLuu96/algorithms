@@ -1,5 +1,5 @@
-const { expect } = require('@jest/globals')
 const shuffledString = require('../shuffledString')
+const {createNum} = require('../testCaseBuilder/shuffledStringBuilder')
 
 const testCases = [
     ['', ''],
@@ -10,9 +10,14 @@ const testCases = [
     ['zenoreo','01'],
     ['eisvnnenieenn','799'],
     ['xeieoiesutgeowiitveesefetnhsfrxiniiehinnunheonnrinhrwinoegsonetooriueenfiitgxnetixnfeeitoerxfgeihitnivtgheneehssnswevvt', '112223344455666667788888999999'],
-    ['exigeenihnvfsinhtghevitiveseiingtigveesnefxieheenehnisetxegsnigeitgeehviniiitfntnxniishixesi','5556666677888888899999'],
-    ['rzfeneenzgogtueoeowunrigwoenieoorfioteitoereeonewfefvtrorroieehrftfvirwiriegotnrhotnzrzooeeoerorfinvoghooeozeiinoouznezteeeeofzreerezhorozonhifeoewtounfvvzenriooifnznutzeounere', '0000000000000111111112222244444455555888889999']
+    ['exigeenihnvfsinhtghevitiveseiingtigveesnefxieheenehnisetxegsnigeitgeehviniiitfntnxniishixesi','5556666677888888899999']
 ]
+
+// Extra Test Cases
+
+// for(let i = 0; i < 20; i++){
+//     testCases.push(createNum())
+// }
 
 testCases.forEach((x, i)=>{
     test(`Test Case ${i + 1}: `, ()=>{
