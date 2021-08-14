@@ -1,4 +1,3 @@
-const { expect } = require('@jest/globals')
 const shuffledString = require('../shuffledString')
 
 const testCases = [
