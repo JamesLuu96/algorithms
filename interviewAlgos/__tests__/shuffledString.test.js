@@ -15,9 +15,9 @@ const testCases = [
 
 // Extra Test Cases
 
-// for(let i = 0; i < 20; i++){
-//     testCases.push(createNum())
-// }
+for(let i = 0; i < 200; i++){
+    testCases.push(createNum())
+}
 
 testCases.forEach((x, i)=>{
     test(`Test Case ${i + 1}: `, ()=>{

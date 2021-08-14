@@ -28,7 +28,7 @@ function randomizeStrNames(num){
 function createNum(){
     let num = ""
     for(let i = 0; i < 10; i++){
-        const amount = Math.floor(Math.random() * 10)
+        const amount = Math.floor(Math.random() * 50)
         const fifty = Math.floor(Math.random() * 2)
         if(fifty === 0){
             num += i.toString().repeat(amount)
