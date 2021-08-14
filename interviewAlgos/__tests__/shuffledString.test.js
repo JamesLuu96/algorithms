@@ -5,7 +5,7 @@ const testCases = [
     ['', ''],
     ['ozonurnroefneneeio', '01149'],
     ['ohusineoxneiieernogntf', '114689'],
-    ['niihsennnfveehittoweiesiereurieogeienthsttieefnhereneihitgoxevnnennnnxfengnrifituheoiiiogeronnvnennzveeseie', '01123344556677888899999999'],
+    ['ixiiiinirrhneeeeehefneenvnfgnineeonsineniifvennefhnouegxhiztvvstteeteeieirtssineinrneenhngrinoeetwtnoohgeou', '01123344556677888899999999'],
     ['eetrenregvtonnonnostzneeneehgeeinrozieonozheeeigineoininnoheeooen','00011111117888999'],
     ['zenoreo','01'],
     ['eisvnnenieenn','799'],
@@ -15,13 +15,14 @@ const testCases = [
 
 // Extra Test Cases
 
-// for(let i = 0; i < 20; i++){
-//     testCases.push(createNum())
-// }
+for(let i = 0; i < 200; i++){
+    testCases.push(createNum())
+}
 
 testCases.forEach((x, i)=>{
     test(`Test Case ${i + 1}: `, ()=>{
         expect(shuffledString(x[0])).toBe(x[1])
     })
 })
+
 
